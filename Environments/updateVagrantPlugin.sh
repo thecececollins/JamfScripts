@@ -1,2 +1,2 @@
-##This script installs Vagrant plugin update - agrant-vbguest
+##This script updates Vagrant plugin: agrant-vbguest
 vagrant plugin update vagrant-vbguest

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+"/Library/Application Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper" -windowType hud -title "Software Update Required" -heading "Required Mac OS update" -alignHeading justified -description 'A reboot is required to apply operating system updates to your Mac.  Please save your work before clicking reboot. Please log in after the reboot to kickstart the final phase of installation.' -alignDescription left -icon '/System/Library/CoreServices/Install Command Line Developer Tools.app/Contents/Resources/SoftwareUpdate.icns' -button1 Reboot -timeout 3600 -countdown -lockHUD

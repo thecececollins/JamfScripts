@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<!-- Managing the Chrome extensions-->
+<key>ExtensionInstallForcelist</key>
+	<array>
+	<!-- Zoom Scheduler	Chrome extension -->
+		<string>kgjfgplpablkjnlkjmjdecgdpfankdle;https://clients2.google.com/service/update2/crx</string>
+		<string>kgjfgplpablkjnlkjmjdecgdpfankdle</string>
+	<!-- Bitium	Chrome extension-->
+		<string>bkijljdgagpjfhikcahegclahhlmijch;https://clients2.google.com/service/update2/crx</string>
+		<string>bkijljdgagpjfhikcahegclahhlmijch</string>
+	</array>
+
+<!-- Managing the bookmarks bar and content-->
+<!--	<key>BookmarkBarEnabled</key> -->
+<!-- 	<true/> -->
+	<key>ManagedBookmarks</key>
+	<array>
+	<dict>
+		<key>name</key>
+		<string>Gmail</string>
+		<key>url</key>
+		<string>https://mail.google.com</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Freshservice</string>
+		<key>url</key>
+		<string>https://narrativescience.freshservice.com</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The Hub</string>
+		<key>url</key>
+		<string>https://confluence.n-s.internal/display/NGH/NS+Global+Hub+Home</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Envoy</string>
+		<key>url</key>
+		<string>https://dashboard.envoy.com/login</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Zenefits</string>
+		<key>url</key>
+		<string>https://secure.zenefits.com/accounts/login/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Paystubs</string>
+		<key>url</key>
+		<string>https://www.paycheckrecords.com/login.jsp</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bitium</string>
+		<key>url</key>
+		<string>https://bitium.com/narrativescience.com</string>
+	</dict>
+		</array>
+</dict>
+</plist>

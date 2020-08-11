@@ -26,7 +26,7 @@ serialnumber=`ioreg -l | awk '/IOPlatformSerialNumber/ { print $4;}' | sed 's/"/
 assettag=$(/usr/bin/osascript <<-'__EOF__'
 tell application "System Events"
 	activate
-	set input to display dialog "Enter the Asset Tag number (NSxxxx) located in the top left corner above the keyboard:" default answer "" buttons {"OK"} default button 1
+	set input to display dialog "Enter the Asset Tag number (xxxx) located in the top left corner above the keyboard:" default answer "" buttons {"OK"} default button 1
 	return text returned of input as string
 end tell
 __EOF__
@@ -72,7 +72,7 @@ touch /tmp/setemail2.xml
 email=`/usr/bin/osascript <<EOT
 tell application "System Events"
 activate
-set email to text returned of (display dialog "Input your Narrative Science email address:" default answer "OK" with icon 2)
+set email to text returned of (display dialog "Input your [companyname] email address:" default answer "OK" with icon 2)
 end tell
 EOT`
 

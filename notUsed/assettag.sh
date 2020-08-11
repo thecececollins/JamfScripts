@@ -56,13 +56,13 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
 # URL of the Jamf Pro server (ie. https://jamf.acme.com:8443)
-jamfProURL="https://narrativescience.jamfcloud.com"
+jamfProURL=""
 
 # API user account in Jamf Pro w/ Update permission
-apiUser="autopkgr"
+apiUser=""
 
 # Password for above API user account
-apiPass="FirmFlameWonderCareful1!"
+apiPass=""
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # CHECK IF JAMF PRO IS AVAILABLE

@@ -41,7 +41,7 @@ echo "$PUB_KEY" | pbcopy
 
 # Notification template
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
-TITLE="Narrative Science"
+TITLE="Company Name"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 
@@ -50,7 +50,7 @@ ADESC="Natural"
 echo "$PUB_KEY" | pbcopy
 
 # Opens Freshservice SSH Key Upload ticket
-open https://narrativescience.freshservice.com/support/catalog/items/87 
+open https://[companyname].freshservice.com
 
 # Unset error on exit or it will affect after bash command
 set +e

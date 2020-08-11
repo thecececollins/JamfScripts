@@ -14,8 +14,8 @@
 # In order for this script to work effectively you will need to run the script from one computer
 # with the target computer booted to Target Disk Mode and hardwired to the computer running the script.
 #
-# Written by: CCollins | IT Lead | Narrative Science
-# Edited by: CCollins | IT Lead | Narrative Science
+# Written by: CCollins | IT Manager | 
+# Edited by: CCollins | IT Manager |  
 #
 # Created On: September 26th, 2019
 # Updated On: 

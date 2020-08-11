@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.narrativescience.install_or_defer</string>
+	<string>com.[companyname].install_or_defer</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>

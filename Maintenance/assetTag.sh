@@ -6,9 +6,9 @@ modelName=$(system_profiler SPHardwareDataType | awk '/Model Name/ {print $3" "$
 serialNumber=$(system_profiler SPHardwareDataType | awk '/Serial Number/{print $4}')
 
 # JSS API Information Variables
-apiUser="Autopkgr"
-apiPassword="FirmFlameWonderCareful1!"
-jss="https://narrativescience.jamfcloud.com"
+apiUser=""
+apiPassword=""
+jss="https://[companyname].jamfcloud.com"
 uuid=$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'"' '/IOPlatformUUID/{print $4}')
 jssAssetTag=$(curl -H "Accept: text/xml" -sfku "$apiUser:$apiPassword" "$jss/JSSResource/computers/udid/$uuid/subset/general" | xmllint --format - 2>/dev/null | awk -F'>|<' '/<asset_tag>/{print $3}')
 jssDepartment=$(curl -H "accept: text/xml" -sku "$apiUser:$apiPassword" "$jss/JSSResource/computers/serialnumber/$serialNumber" \ -X GET | xmllint --xpath '/computer/location/department/text()' -)
@@ -19,7 +19,7 @@ jssLocation=$(curl -H "accept: text/xml" -sku "$apiUser:$apiPassword" "$jss/JSSR
 assetTag=$(/usr/bin/osascript <<-'__EOF__'
 tell application "System Events"
 	activate
-	set input to display dialog "Enter the Asset Tag number (NSxxxx) located in the top left corner above the keyboard:" default answer "" buttons {"OK"} default button 1
+	set input to display dialog "Enter the Asset Tag number (xxxx) located in the top left corner above the keyboard:" default answer "" buttons {"OK"} default button 1
 	return text returned of input as string
 end tell
 __EOF__

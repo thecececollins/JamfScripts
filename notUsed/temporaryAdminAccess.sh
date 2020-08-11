@@ -7,8 +7,8 @@
 #
 #
 #
-# Written by: Cece Collins | IT Lead | Narrative Science
-# Edited by: Cece Collins | IT Lead | Narrative Science
+# Written by: Cece Collins | IT Manager | 
+# Edited by: Cece Collins | IT Manager | 
 #
 # Created On: June 26th, 2019
 # Updated On: July 8th, 2019

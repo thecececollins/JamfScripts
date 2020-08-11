@@ -6,9 +6,9 @@
 #############
 
 # JSS information
-jssurl="https://narrativescience.jamfcloud.com" # example: https://example.com:8443
-username="Autopkgr"
-password="FirmFlameWonderCareful1!"
+jssurl="https://[companyname].jamfcloud.com" # example: https://example.com:8443
+username=""
+password=""
 uuid=$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'"' '/IOPlatformUUID/{print $4}')
 
 # Local Information Variables

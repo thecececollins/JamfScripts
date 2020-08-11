@@ -58,9 +58,9 @@ ENDMSG
 # The password for the account
 # The Jamf Pro URL
 
-jamfproURL="https://narrativescience.jamfcloud.com"	## Set the Jamf Pro URL here if you want it hardcoded.
-apiUser="autopkgr"		## Set the username here if you want it hardcoded.
-apiPass="FirmFlameWonderCareful1!"		## Set the password here if you want it hardcoded.
+jamfproURL="https://[companyname].jamfcloud.com"	## Set the Jamf Pro URL here if you want it hardcoded.
+apiUser=""		## Set the username here if you want it hardcoded.
+apiPass=""		## Set the password here if you want it hardcoded.
 
 # Jamf Pro distribution point account name and password, used by file share distribution points.
 # 

@@ -25,7 +25,7 @@
 
 # Path to a plist file that is used to store settings locally. Omit ".plist"
 # extension.
-PLIST="/Library/Preferences/com.narrativescience.install_or_defer"
+PLIST="/Library/Preferences/com.[companyname].install_or_defer"
 
 # (Optional) Path to a logo that will be used in messaging. Recommend 512px,
 # PNG format. If no logo is provided, the Software Update icon will be used.
@@ -34,7 +34,7 @@ LOGO=""
 # The identifier of the LaunchDaemon that is used to call this script, which
 # should match the file in the payload/Library/LaunchDaemons folder. Omit
 # ".plist" extension.
-BUNDLE_ID="com.narrativescience.install_or_defer"
+BUNDLE_ID="com.[companyname].install_or_defer"
 
 
 ################################## MESSAGING ##################################
@@ -57,7 +57,7 @@ MSG_ACT_OR_DEFER_HEADING="Critical updates are available"
 MSG_ACT_OR_DEFER="Apple has released critical security updates, and your IT and Security departments would like you to install them as soon as possible. Please save your work, quit all applications, and click Run Updates.
 {{If now is not a good time, you may defer this message until later. }}Updates will install automatically after %DEFER_HOURS% hours<<, forcing your Mac to restart in the process>>. Note: This may result in losing unsaved work.
 If you'd like to manually install the updates yourself, open %UPDATE_MECHANISM% and apply all system and security updates<<, then restart when prompted>>.
-If you have any questions, please open and IT support ticket via Freshservice."
+If you have any questions, please open and IT support ticket."
 
 # The message users will receive after the deferral deadline has been reached.
 MSG_ACT_HEADING="Please run updates now"

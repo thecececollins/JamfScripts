@@ -5,13 +5,12 @@
 # 
 # This script will accomplish the following:
 # 			- Building on top of Base image Script
-# 			- Adds to the NS profile:
-# 				- QUILL_ROOT Env Var
 #
 #
 #
-# Written by: Collins | IT Lead | Narrative Science
-# Edited by: Collins | IT Lead | Narrative Science
+#
+# Written by: Collins | IT Manager | 
+# Edited by: Collins | IT Manager | 
 #
 # Created On: October 17th, 2016
 # Updated On: October 17th, 2016
@@ -24,7 +23,7 @@
 
 # Notification template
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
-TITLE="Narrative Science"
+TITLE="Company"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 

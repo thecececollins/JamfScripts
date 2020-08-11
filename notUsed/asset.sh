@@ -2,9 +2,9 @@
 
 ## Variables ##
 MACADDRESS=$(networksetup -getmacaddress en0 | awk '{ print $3 }')
-JSS="https://narrativescience.jamfcloud.com"
-API_USER="autopkgr"
-API_PASS="FirmFlameWonderCareful1!"
+JSS=""
+API_USER=""
+API_PASS=""
 UUID=$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'"' '/IOPlatformUUID/{print $4}')
 ASSET_TAG_INFO=$(curl -H "Accept: text/xml" -sfku "$API_USER:$API_PASS" "$JSS/JSSResource/computers/udid/$UUID/subset/general" | xmllint --format - 2>/dev/null | awk -F'>|<' '/<asset_tag>/{print $3}')
 SERIAL_NUMBER=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')

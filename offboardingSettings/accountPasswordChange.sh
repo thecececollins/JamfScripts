@@ -3,7 +3,7 @@
 
 
 # Variables
-password="Sciencewins303!"
+password=""
 user=$(whoami)
 
 # Change password

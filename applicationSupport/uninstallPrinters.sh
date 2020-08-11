@@ -5,14 +5,14 @@
 #########################################################################################
 
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
-TITLE="Narrative Science"
+TITLE="Computer Name"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 
 "$JH" -windowType utility -title "$TITLE" -heading "Uninstall Printers" -description "
 This will do the following:
 ----------------------------------------------
-- Uninstall all Chicago NS printers from System Preferences
+- Uninstall all company printers from System Preferences
 - Uninstall all related printer drivers
 - Restart Mac to finalize the uninstallation process
 

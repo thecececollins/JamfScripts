@@ -2,7 +2,7 @@
 
 # Notification template
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
-TITLE="Narrative Science"
+TITLE="Company Name"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 
@@ -67,12 +67,12 @@ __EOF__
 # read $LDAP_USERNAME
 
 # Create NS Bash Profile
-touch ~/.ns-eng-profile
+touch ~/.[companyname]s-eng-profile
 
 
 # Add variables
-echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> ~/.ns-eng-profile
-echo "source AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" >> ~/.ns-eng-profile
-echo "export NPM_AUTH_TOKEN=$NPM_AUTH_TOKEN" >> ~/.ns-eng-profile
-echo "SSH Key=$PUB_KEY" >> ~/.ns-eng-profile
-echo "LDAP_USERNAME=$LDAP_USERNAME" >> ~/.ns-eng-profile
+echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> ~/.[companyname]-eng-profile
+echo "source AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" >> ~/.[companyname]-eng-profile
+echo "export NPM_AUTH_TOKEN=$NPM_AUTH_TOKEN" >> ~/.[companyname]-eng-profile
+echo "SSH Key=$PUB_KEY" >> ~/.[companyname]-eng-profile
+echo "LDAP_USERNAME=$LDAP_USERNAME" >> ~/.[companyname]-eng-profile

@@ -57,8 +57,8 @@
 ## of FileVault 2 users.
 
 ## Pass the credentials for an admin account that is authorized with FileVault 2
-adminName="Admin"
-adminPass="FirmFlameWonderCareful1!"
+adminName=""
+adminPass=""
 
 if [ "${adminName}" == "" ]; then
 	echo "Username undefined.  Please pass the management account username in parameter 4"

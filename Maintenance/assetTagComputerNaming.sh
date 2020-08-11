@@ -6,9 +6,9 @@ modelName=$(system_profiler SPHardwareDataType | awk '/Model Name/ {print $3" "$
 serialNumber=$(system_profiler SPHardwareDataType | awk '/Serial Number/{print $4}')
 
 # JSS API Information Variables
-apiUser="Autopkgr"
-apiPassword="FirmFlameWonderCareful1!"
-jss="https://narrativescience.jamfcloud.com"
+apiUser=""
+apiPassword=""
+jss="https://[companyname].jamfcloud.com"
 uuid=$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'"' '/IOPlatformUUID/{print $4}')
 
 
@@ -16,7 +16,7 @@ uuid=$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'"' '/IOPlatformUUID/{print 
 assetTag=$(/usr/bin/osascript <<-'__EOF__'
 tell application "System Events"
 	activate
-	set input to display dialog "Enter the Asset Tag number (NSxxxx) located in the top left corner above the keyboard:" default answer "" buttons {"OK"} default button 1
+	set input to display dialog "Enter the Asset Tag number (xxxx) located in the top left corner above the keyboard:" default answer "" buttons {"OK"} default button 1
 	return text returned of input as string
 end tell
 __EOF__

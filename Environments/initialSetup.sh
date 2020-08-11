@@ -3,7 +3,7 @@
 #TALOS_ROOT=$PWD
 
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
-TITLE="Narrative Science"
+TITLE="Company Name"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 

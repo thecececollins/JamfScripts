@@ -1,8 +1,8 @@
 #!/bin/bash
 
-JSS="https://narrativescience.jamfcloud.com"
-API_USER="autopkgr"
-API_PASS="FirmFlameWonderCareful1!"
+JSS="https://[companyname].jamfcloud.com"
+API_USER=""
+API_PASS=""
 UUID=$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'"' '/IOPlatformUUID/{print $4}')
 SERIAL=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
 REALNAME=$(/usr/bin/curl -H "Accept: text/xml" -sfku "$API_USER:$API_PASS" "$JSS/JSSResource/computers/serialnumber/$SERIAL/subset/location" | xmllint --format - 2>/dev/null | awk -F'>|<' '/<realname>/{print $3}')

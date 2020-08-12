@@ -47,7 +47,7 @@ runCommand=$( /usr/sbin/scutil --get ComputerName )
 computerName="Computer Name: $runCommand"
 
 ##Get MacModel
-#runCommand=$( curl -s -k -u autopkgr:FirmFlameWonderCareful1! https://narrativescience.jamfcloud.com/JSSResource/computers/macaddress/$MACaddy | xpath /computer/hardware/model | awk -F '[>|<]' '{print ($3)}' )
+#runCommand=$( curl -s -k -u [username]:[password] https://[companyname.jamfcloud.com/JSSResource/computers/macaddress/$MACaddy | xpath /computer/hardware/model | awk -F '[>|<]' '{print ($3)}' )
 #macModel="Model: $runCommand"
 
 # Display serial number

@@ -7,8 +7,8 @@
 # 			- Install/update balenaEtcher
 #
 #
-# Written by: Cece Collins | IT Lead | Narrative Science
-# Edited by: Cece Collins | IT Lead | Narrative Science
+# Written by: Cece Collins
+# Edited by: Cece Collins
 #
 # Created On: February 12th, 2020
 # Updated On: February 12th, 2020

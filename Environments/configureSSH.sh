@@ -45,12 +45,12 @@ TITLE="Company Name"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 
-"$JH" -windowType utility -title "$TITLE" -heading "Base Development Environment Setup" -description "Simply paste (command + v) into the SSH Key field in the Freshservice ticket opened in the next step." -button1 "Open ticket" -icon "$ICON" -alignDescription natural -alignHeading natural
+"$JH" -windowType utility -title "$TITLE" -heading "Base Development Environment Setup" -description "Simply paste (command + v) into the SSH Key field in the ticket opened in the next step." -button1 "Open ticket" -icon "$ICON" -alignDescription natural -alignHeading natural
 
 echo "$PUB_KEY" | pbcopy
 
-# Opens Freshservice SSH Key Upload ticket
-open https://[companydomain].freshservice.com 
+# Open SSH Key Upload IT ticket
+open https://[companydomain].[ticketing system name].com 
 
 # Unset error on exit or it will affect after bash command
 set +e

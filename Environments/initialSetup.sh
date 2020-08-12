@@ -1,6 +1,6 @@
 #!/bin/bash
 #PLATFORM=`uname -s`
-#TALOS_ROOT=$PWD
+#[name]_ROOT=$PWD
 
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
 TITLE="Company Name"
@@ -227,7 +227,7 @@ echo "export NPM_AUTH_TOKEN=$NPM_AUTH_TOKEN" >> ~/.zshrc
 
 
 # Replace githooks section with this:
-###### https://github.com/NarrativeScience/talos/blob/master/README.md#run-linting-and-formatting
+###### https://github.com/[companyname]
 pip install flake8==3.5.0
 pip install isort==4.3.16
 pip install black
@@ -251,12 +251,12 @@ npm install -g gherkin-lint
 "$JH" -windowType utility -title "$TITLE" -heading "Postgres Directory" -description "githooks is installed, now we'll install GherkinLint. Here we go!" -button1 "Super!" -icon "$ICON" -alignDescription natural -alignHeading natural
 
 # Create Postgres Directory
-sudo mkdir -p /usr/local/opt/talos-postgres
-sudo chown -R $USER /usr/local/opt/talos-postgres
+sudo mkdir -p /usr/local/opt/[name]-postgres
+sudo chown -R $USER /usr/local/opt/[name]-postgres
 
-"$JH" -windowType utility -title "$TITLE" -heading "It's Talos Time!" -description "Postgres Directory is setup, now we'll create and update Talos. Last step!" -button1 "Baller!" -icon "$ICON" -alignDescription natural -alignHeading natural
+"$JH" -windowType utility -title "$TITLE" -heading "It's Time!" -description "Postgres Directory is setup, now we'll create and update. Last step!" -button1 "Baller!" -icon "$ICON" -alignDescription natural -alignHeading natural
 
-# Create and Update Talos
-zsh --rcfile <(echo '. ~/.zshrc; pyenv global 3.6.8; pyenv shell 3.6.8;eval updateTalos;eval setupPostgres')
+# Create and Update
+zsh --rcfile <(echo '. ~/.zshrc; pyenv global 3.6.8; pyenv shell 3.6.8;eval update[name];eval setupPostgres')
 
 "$JH" -windowType utility -title "$TITLE" -heading "Complete" -description "That wasn't too painful. Now you have the foundation of your dev environment configured. Congrats!" -button1 "Cheers!" -icon "$ICON" -alignDescription natural -alignHeading natural

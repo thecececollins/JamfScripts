@@ -102,7 +102,7 @@ else
 fi
 
 # REPLACEME with your own dotfiles
-# bash -c "$(curl -fsSL raw.github.com/zgallup/dotfiles/master/install)"
+# bash -c "$(curl -fsSL raw.github.com/[name]/dotfiles/master/install)"
 
 "$JH" -windowType utility -title "$TITLE" -heading "Python Environment" -description "HomeBrew is installed, now we'll configure your Python Environment. Here we go!" -button1 "Super!" -icon "$ICON" -alignDescription natural -alignHeading natural
 

@@ -229,7 +229,7 @@ $timeServer
 ----------------------------------------------
 
 
-Feel free to take a screenshot of this information and attach it to your Freshservice IT ticket."
+Feel free to take a screenshot of this information and attach it to your IT ticket."
 
 
 

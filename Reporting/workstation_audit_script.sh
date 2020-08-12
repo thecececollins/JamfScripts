@@ -52,7 +52,7 @@ resulting_file=$username"_audit_results"
 # Provide feedback in case curl takes a long time or times-out
 echo "Please wait..."
 
-# Confirm that user is on the correct wireless network ("narrativescience") and
+# Confirm that user is on the correct wireless network ("[companyname]") and
 # is able to connect to the NAS
 curl 10.0.8.40 --connect-timeout 5 -s >> /dev/null
 
@@ -60,11 +60,11 @@ if [ $? != 0 ]; then
     echo
     echo "Unable to connect to the NAS. Please confirm that you are currently"\
     "located in the Chicago office, that you are connected to the"\
-    "\"narrativescience\" wireless network, and attempt to run this script"\
+    "\"[companyname]\" wireless network, and attempt to run this script"\
     "again. See I.T. if issues persist."
     echo
     echo "Optionally, you can save the report locally and manually email it"\
-    "to officeIT@narrativescience.com (only recommended for remote employees)." 
+    "to [support email] (only recommended for remote employees)." 
     read -p "Would you like to choose this option? (y/N): " response
 
     if [[ $response =~ ^([Yy][Ee][Ss]|[Yy])$ ]]; then
@@ -79,7 +79,7 @@ fi
 # Get user-inputted asset tag number immediately to avoid lengthy waits for the
 # user
 read -p "Please enter your computer's asset tag number (example format: "\
-"\"NS0123\"): " asset_tag_number
+"\"[asset tag example]\"): " asset_tag_number
 
 until [[ $asset_tag_number = [Nn][Ss][0-9][0-9][0-9][0-9] ]]; do
 	if [[ $counter -ge 2 ]]; then
@@ -87,7 +87,7 @@ until [[ $asset_tag_number = [Nn][Ss][0-9][0-9][0-9][0-9] ]]; do
 		"or see I.T."
 		exit 1;
 	fi
-	read -p "Asset Tag Number format is invalid (example format: \"NS0123\").\
+	read -p "Asset Tag Number format is invalid (example format: \"[asset tag example]\").\
 	Please try again: " asset_tag_number
 	(( counter++ ))
 done
@@ -329,8 +329,8 @@ if [[ $is_local != 1 ]]; then
 		echo
 		echo "An error occurred while attempting to upload the PDF report to "\
 		"the NAS. Please confirm that you are currently located in the Chicago"\
-		" office, that you are connected to \"narrativescience\", attempt to "\
-		"run this script again, and/or contact I.T."
+		" office, that you are connected to \"[companyname]\", attempt to "\
+		"run this script again, and/or contact IT."
 		echo
 		rm $resulting_file.pdf
 		exit 1;
@@ -339,7 +339,7 @@ else
 	mv $resulting_file.pdf ~/Downloads/
 	echo
 	echo "\""$resulting_file".pdf\" has been placed in your \"Downloads\""\
-	"folder. Please send this file to officeIT@narrativescience.com. Script"\
+	"folder. Please send this file to [support email]. Script"\
 	"has finished. Feel free to quit out of Terminal (Terminal -> Quit"\
 	"Terminal or Command + Q)."
 	echo

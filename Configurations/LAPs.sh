@@ -63,7 +63,7 @@ if [ "$6" != "" ] && [ "$resetUser" == "" ];then
 resetUser=$6
 fi
 
-apiURL="https://narrativescience.jamfcloud.com"
+apiURL="https://[companydomain].jamfcloud.com"
 LogLocation="/Library/Logs/Jamf_LAPS.log"
 
 newPass=$(openssl rand -base64 10 | tr -d OoIi1lLS | head -c12;echo)

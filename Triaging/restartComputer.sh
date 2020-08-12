@@ -7,7 +7,7 @@
 loggedInUser=$(stat -f%Su /dev/console)
 jamfHelper="/Library/Application Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper"
 windowType="hud"
-description="There is a critical security update available for your Narrative Science issued computer. To perform the update, select 'UPDATE' below and the security update will begin to run. Once complete, you will be prompted to restart immediately. If you are unable to perform this update at the moment, please select 'Cancel.'
+description="There is a critical security update available for your [Company Name] issued computer. To perform the update, select 'UPDATE' below and the security update will begin to run. Once complete, you will be prompted to restart immediately. If you are unable to perform this update at the moment, please select 'Cancel.'
 
 *Please save all working documents before selecting 'UPDATE.'
 

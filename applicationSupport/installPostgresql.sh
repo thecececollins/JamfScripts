@@ -10,8 +10,8 @@
 #
 #
 #
-# Written by: Collins | IT Lead | Narrative Science
-# Edited by: Collins | IT Lead | Narrative Science
+# Written by: Collins
+# Edited by: Collins
 #
 # Created On: October 17th, 2016
 # Updated On: October 17th, 2016
@@ -24,7 +24,7 @@
 
 # Notification template
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
-TITLE="Narrative Science"
+TITLE="Company Name"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 

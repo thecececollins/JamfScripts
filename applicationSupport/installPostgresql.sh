@@ -5,8 +5,6 @@
 # 
 # This script will accomplish the following:
 # 			- Building on top of Base image Script
-# 			- Adds to the NS profile:
-# 				- QUILL_ROOT Env Var
 #
 #
 #

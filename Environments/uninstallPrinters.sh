@@ -5,14 +5,14 @@
 #########################################################################################
 
 JH=/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper
-TITLE="Narrative Science"
+TITLE="Company Name"
 ICON="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns"
 ADESC="Natural"
 
 "$JH" -windowType utility -title "$TITLE" -heading "Uninstall Printers" -description "
 This will do the following:
 ----------------------------------------------
-- Uninstall all Chicago NS printers from System Preferences
+- Uninstall all printers from System Preferences
 - Uninstall all related printer drivers
 - Restart Mac to finalize the uninstallation process
 
@@ -23,22 +23,22 @@ This will do the following:
 # Removes printers from System Preferences
 lpstat -p | awk '{print $2}' | while read printer
 do
-echo "Deleting Printer:" Amtrak_Printer
-lpadmin -x Amtrak_Printer
-echo "Deleting Printer:" CTA_Printer
-lpadmin -x CTA_Printer
-echo "Deleting Printer:" Metra_Printer
-lpadmin -x Metra_Printer
-echo "Deleting Printer:" Brother_MFC_L8600CDW
-lpadmin -x Brother_MFC_L8600CDW
-echo "Deleting Printer:" Brother_MFC_L8600CDW__30055cb56330_
-lpadmin -x Brother_MFC_L8600CDW__30055cb56330_
-echo "Deleting Printer:" Brother_MFC_L8600CDW__30055cb56330____Fax
-lpadmin -x Brother_MFC_L8600CDW__30055cb56330____Fax
-echo "Deleting Printer:" Brother_MFC_L8600CDW___Fax
-lpadmin -x Brother_MFC_L8600CDW___Fax
-echo "Deleting Printer:" Brother_MFC_L8850CDW
-lpadmin -x Brother_MFC_L8850CDW
+echo "Deleting Printer:" [printername]
+lpadmin -x [printername]
+echo "Deleting Printer:" [printername]
+lpadmin -x [printername]
+echo "Deleting Printer:" [printername]
+lpadmin -x [printername]
+echo "Deleting Printer:" [printermodel]
+lpadmin -x  [printermodel]
+echo "Deleting Printer:" [printermodel]
+lpadmin -x [printermodel]
+echo "Deleting Printer:" [printermodel]
+lpadmin -x [printermodel]
+echo "Deleting Printer:" [printermodel]
+lpadmin -x [printermodel]
+echo "Deleting Printer:" [printermodel]
+lpadmin -x [printermodel]
 done
 
 # Removes printer drivers
